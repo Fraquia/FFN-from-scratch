@@ -10,7 +10,10 @@ Implementation of a simple two-layer neural network and its training algorithm b
 
 We developed the same architecture in different ways so as benchmark to test our models, we consider an image classification task using the widely used CIFAR-10 dataset. This dataset consists of 50000 training images of 32x32 resolution with 10 object classes, namely airplanes, cars, birds, cats, deer, dogs, frogs, horses, ships, and trucks. **The task is to code and train a parameterised model for classifying those images**
 
-## FFN Architecture
+## Part 1: FFN Architecture
+
+In this part we will implement a two-layered a neural network architecture as well as the loss function to train it. Starting from the main file **ex2_FCnet.py**, we specified the required code in the **two_layernet.py** to complete this question.
+
 Our architecture is shown in the image that follows:
 
 <img src="https://github.com/Fraquia/FFN-from-scratch/blob/main/architecture.png" width="70%" height="100%">
