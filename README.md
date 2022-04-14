@@ -73,6 +73,6 @@ We implemented the stochastic gradient descent algorithm in **two_layernet.py** 
 
 We are now ready to train our model on real image dataset. For this we will use the CIFAR-10 dataset. Since the images are of size 32 × 32 pixels with 3 color channels, this gives us 3072 input layer units, represented by a vector x ∈ R3072. The code to load the data and train the model is provided with some default hyper-parameters in **ex2_FCnet.py**. 
 
-With default hyper-parametres we should get validation set accuracy of about 29%. This is very poor. So we tried to debug the model training and come up with better hyper-parameters to improve the performance on the validation set also visualizing the training and validation performance curves to help with this analysis. 
+With default hyper-parametres we got validation set accuracy of about 29%. This is very poor. So we tried to debug the model training and come up with better hyper-parameters to improve the performance on the validation set also visualizing the training and validation performance curves to help with this analysis. 
 
 
