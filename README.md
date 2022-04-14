@@ -42,4 +42,21 @@ A similar linear operation is performed on a(2), resulting in z(3) = W(2)a(2), w
   
   fθ(x) := a(3) = ψ(z(3))
   
-We indicate all the network k parameters by θ=(W(1) ,b(1) ,W(2) ,b(2))
+We indicate all the network k parameters by **θ=(W(1) ,b(1) ,W(2) ,b(2))**. We later guide the neural network parameters θ to fit to the given data and label pairs. We do so by minimising the loss function. A popular choice of the loss function for training neural network for multi-class classification is the **cross-entropy loss**.
+
+## Part 2: Backpropagation Algorithm 
+
+
+We train the model by solving the **Objective Function** via **Stochastic Gradient Descent**. We therefore need an efficient computation of the gradients ∇J. We use **Backpropagation** of top layer error signals to the parameters θ at different layers.
+In this part, we implemented the backpropagation algorithm from scratch in the **two_layernet.py** file.
+
+### Backpropagation 
+
+
+The backpropagation algorithm is simply a sequential application of **chain rule**. It is applicable to any (sub-) differentiable model that is a composition of simple building blocks. In this part, we focus on the architecture with stacked layers of linear transformation + ReLU non-linear activation.
+
+The intuition behind the backpropagation algorithm is as follows. Given a training example (xi, yi), we first run the feedforward to compute all the activations throughout the network, including the output value of the model fθ(xi) and the loss J. Then, for each parameter in the model we want to compute the effect that parameter has on the loss. This is done by computing the derivatives of the loss w.r.t. each model parameter.
+
+The backpropagation algorithm is performed from the top of the network (loss layer) towards the bottom. Itsequentially computes the gradient of the loss function with respect to each layer activations and parameters.
+
+
