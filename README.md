@@ -6,6 +6,8 @@ Implementation of a simple two-layer neural network and its training algorithm b
 3. Training the model using stochastic gradient descent and improving the model training with better hyper- parameters (Part 3).
 4. Using the PyTorch Library to implement the above and experiment with deeper networks (Part 4).
 
+**To be able to train the above model on large datasets, with larger layer widths, the code has to be very efficient. To do this we  avoided using any python for loops in the forward pass and instead we used matrix and vector multiplication routines in the Numpy library.**
+
 ## Dataset and Task
 
 We developed the same architecture in different ways so as benchmark to test our models, we consider an image classification task using the widely used CIFAR-10 dataset. This dataset consists of 50000 training images of 32x32 resolution with 10 object classes, namely airplanes, cars, birds, cats, deer, dogs, frogs, horses, ships, and trucks. **The task is to code and train a parameterised model for classifying those images**
