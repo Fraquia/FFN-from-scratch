@@ -62,5 +62,5 @@ The backpropagation algorithm is performed from the top of the network (loss lay
 ## Stochastic Gradient Descend
 
 We have implemented the backpropagation algorithm for computing the parameter gradients and have verified that it indeed gives the correct gradient. We are now ready to train the network. We solve 
-<img src="https://github.com/Fraquia/FFN-from-scratch/blob/main/min.png" width="15%" height="10%">
+<img src="https://github.com/Fraquia/FFN-from-scratch/blob/main/min.png" width="10%" height="5%">
 with the stochastic gradient descent.
