@@ -96,3 +96,13 @@ In this part we:
 ## Report 
 We also produced a PDF report to analyse the results we obtained in each different part. 
 
+## Authors and Credits 
+
+### Authors 
+1. Caterina Alfano (@cat-erina)
+2. Angelo Berardi (@AngeloBerardi) 
+3. Emanuele Fratocchi (@Fraquia)
+4. Dario Cappelli (@Capp18)
+
+### Credits 
+This project was develped as an exercise of Advanced Machine Learning Course at Sapienza University of Rome. This exercise credit goes to Prof. Fabio Galasso.
