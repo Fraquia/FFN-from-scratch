@@ -65,8 +65,8 @@ We have implemented the backpropagation algorithm for computing the parameter gr
 <img src="https://github.com/Fraquia/FFN-from-scratch/blob/main/min.png" width="10%" height="5%">
 with the stochastic gradient descent.
 
-We mplemented the stochastic gradient descent algorithm in **two_layernet.py** and run the training on the toy data. Pur model should be able to obtain loss = 0.02 on the training set and the training curve should look similar to this:
+We implemented the stochastic gradient descent algorithm in **two_layernet.py** and run the training on the toy data. Pur model should be able to obtain loss = 0.02 on the training set and the training curve should look similar to this:
 
-<img src="https://github.com/Fraquia/FFN-from-scratch/blob/main/loss.png" width="50%" height="70%">
+<img src="https://github.com/Fraquia/FFN-from-scratch/blob/main/loss.png" width="30%" height="50%">
 
 
