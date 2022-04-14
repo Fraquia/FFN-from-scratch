@@ -59,4 +59,6 @@ The intuition behind the backpropagation algorithm is as follows. Given a traini
 
 The backpropagation algorithm is performed from the top of the network (loss layer) towards the bottom. Itsequentially computes the gradient of the loss function with respect to each layer activations and parameters.
 
+## Stochastic Gradient Descend
 
+We have implemented the backpropagation algorithm for computing the parameter gradients and have verified that it indeed gives the correct gradient. We are now ready to train the network. We solve **min J(θ)(θ, {xi, yi})** with the stochastic gradient descent.
