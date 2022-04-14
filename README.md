@@ -7,7 +7,7 @@ Implementation of a simple two-layer neural network and its training algorithm b
 
 Our architecture is shown in the image that follows:
 
-![Deep Learning MOdel Architecture](https://github.com/Fraquia/FFN-from-scratch/blob/main/architecture.png =250x250)
+![Deep Learning MOdel Architecture](https://github.com/Fraquia/FFN-from-scratch/blob/main/architecture.png width="200" height="400")
 
 
 The model has:
