@@ -28,9 +28,13 @@ A similar linear operation is performed on a(2), resulting in z(3) = W(2)a(2), w
 **The final functional form of our model is thus defined by:**
 
   a(1) = x
+  
   z(2) =W(1)a(1) +b(1) 
+  
   a(2) = φ(z(2))
+  
   z(3) =W(2)a(2) +b(2)
+  
   fθ(x) := a(3) = ψ(z(3))
   
 We indicate all the network k parameters by θ=(W(1) ,b(1) ,W(2) ,b(2))
