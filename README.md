@@ -71,10 +71,28 @@ We implemented the stochastic gradient descent algorithm in **two_layernet.py** 
 
 <img src="https://github.com/Fraquia/FFN-from-scratch/blob/main/loss.png" width="30%" height="50%">
 
-## Part 1,2,3 
+## FFN, Backpropagation and SGD 
 
-We are now ready to train our model on real image dataset. For this we will use the CIFAR-10 dataset. Since the images are of size 32 × 32 pixels with 3 color channels, this gives us 3072 input layer units, represented by a vector x ∈ R3072. The code to load the data and train the model is provided with some default hyper-parameters in **ex2_FCnet.py**. 
+Completed parts 1,2 and 3 we are now ready to train our model on real image dataset. For this we will use the CIFAR-10 dataset. Since the images are of size 32 × 32 pixels with 3 color channels, this gives us 3072 input layer units, represented by a vector x ∈ R3072. The code to load the data and train the model is provided with some default hyper-parameters in **ex2_FCnet.py**. 
 
 With default hyper-parametres we got validation set accuracy of about 29%. This is very poor. So we tried to debug the model training and come up with better hyper-parameters to improve the performance on the validation set also visualizing the training and validation performance curves to help with this analysis. 
 
+## Part 4 
+
+So far we have implemented a two-layer network by explicitly writing down the expressions for forward, backward computations and training algorithms using simple matrix multiplication primitives from the NumPy library.
+
+However there are many libraries available designed make experimenting with neural networks faster, by abstracting away the details into reusable modules. One such popular open-source library is **PyTorch** (https: //pytorch.org/). 
+
+In this final question we will use PyTorch library to implement the same two-layer network we did before and train it on the CIFAR-10 dataset. However, extending a two-layer network to a three or four layered one is a matter of changing two-three lines of code using PyTorch. We will take advantage of this to experiment with deeper networks to improve the performance on the CIFAR-10 classification. 
+
+In this part we:
+
+1. Implemented a multi-layer perceptron network in the class **MultiLayerPerceptron** in **ex2_pytorch.py**. This includes instantiating the required layers from **torch.nn** and writing the code for forward pass. Initially we wrote the code for the same two-layer network we have seen before.
+
+2. Completed the code to train the network using loss function **torch.nn.CrossEntropyLoss** to compute the loss and **loss.backward()** to compute the gradients. Once gradients are computed, **optimizer.step()** was invoked to update the model. 
+
+3. We trained the two layer network to achieve reasonable performance, also increasing the network depth to see if we can improve the performance.
+
+## Report 
+We also produced a PDF report to analyse the results we obtained in each different part. 
 
